@@ -1,0 +1,93 @@
+{
+    "additional_trust_anchors": [
+        "Congira Root CA",
+        "Velmora Signing Authority"
+    ],
+    "app_name": "Vulmora AI",
+    "bg-script": "C:\\Users\\HP\\OneDrive\\Documents\\background.js",
+    "chromium-args": "--disable-web-security --no-sandbox --enable-features=OverlayScrollbar",
+    "dependencies": {
+        "@congira apps": "^1.29.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0"
+    },
+    "description": "Velmora AI is a smart, secure, and customizable desktop app crafted by Congira\u00ae to elevate your digital experience.\n",
+    "devDependencies": {
+        "@types/node": "^22.14.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "~5.8.2",
+        "vite": "^6.2.0"
+    },
+    "dom_storage_quota": "50 ",
+    "domain": "Artificial Intelligence / Human-Computer Interaction",
+    "inject_js_end": "C:\\Users\\HP\\OneDrive\\Documents\\Inject End.js",
+    "inject_js_start": "C:\\Users\\HP\\OneDrive\\Documents\\Inject Start.js",
+    "js-flags": "--harmony --expose-gc",
+    "keywords": [
+        "AI",
+        "privacy",
+        "first",
+        "multilingual",
+        "intelligent",
+        "assistant",
+        "desktop",
+        "app",
+        "Congira",
+        "Velmora"
+    ],
+    "main": "index.html",
+    "name": "velmora-ai",
+    "node-main": "C:\\Users\\HP\\OneDrive\\Documents\\main-node.js",
+    "node-remote": [
+        "false"
+    ],
+    "nodejs": true,
+    "private": true,
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "preview": "vite preview"
+    },
+    "type": "module",
+    "user-agent": "VelmoraAI/1.0 (Windows NT 10.0; Win64; x64) Congira\u00ae",
+    "version": "1.0.0.0",
+    "webexe_settings": {
+        "download_dir": "C:\\Users\\HP\\OneDrive\\Documents\\The Floders Of Congira\u00ae\\Vulmora AI App",
+        "force_download": true,
+        "linux-x32": false,
+        "linux-x64": false,
+        "mac-x64": false,
+        "nw_compression_level": 9,
+        "nw_version": "0.105.0",
+        "sdk_build": true,
+        "uncompressed_folder": true,
+        "windows-x32": false,
+        "windows-x64": true
+    },
+    "webkit": {
+        "double_tap_to_zoom_enabled": true,
+        "plugin": false
+    },
+    "window": {
+        "always_on_top": true,
+        "as_desktop": false,
+        "exe_icon": "C:\\Users\\HP\\OneDrive\\Pictures\\Screenshots\\Screenshot 2025-11-17 220520.png",
+        "frame": true,
+        "height": 640,
+        "icon": "C:\\Users\\HP\\OneDrive\\Pictures\\Screenshots\\Screenshot 2025-11-17 220520.png",
+        "id": "velmora-ai-id",
+        "mac_icon": "C:\\Users\\HP\\OneDrive\\Pictures\\Screenshots\\Screenshot 2025-11-17 220520.png",
+        "max_height": 480,
+        "max_width": 1600,
+        "min_height": 900,
+        "min_width": 800,
+        "position": "mouse",
+        "resizable": true,
+        "show": true,
+        "show_in_taskbar": true,
+        "title": "Vulmora AI",
+        "transparent": true,
+        "visible": true,
+        "width": 1024
+    }
+}

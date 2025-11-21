@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velmora AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root[data-theme="dark"] {
+        --background-primary: #0B1821;
+        --background-secondary: #15232C;
+        --border-primary: #2B3B45;
+        --text-primary: #FFFFFF;
+        --text-secondary: #B9C0C6;
+        --text-muted: #5C6970;
+        --accent-primary: #00205B;
+        --accent-primary-hover: #00153D;
+        --accent-secondary: #0F7A74;
+        --accent-secondary-hover: #0A524E;
+        --accent-tertiary: #4AA6F0;
+        --accent-tertiary-hover: #2B8EE9;
+        --accent-danger: #991B1B;
+        --accent-danger-hover: #7F1D1D;
+        --accent-danger-text: #F87171; /* red-400 */
+        --accent-danger-bg: rgba(153, 27, 27, 0.1);
+        --accent-danger-border: rgba(153, 27, 27, 0.5);
+      }
+      :root[data-theme="light"] {
+        --background-primary: #F3F4F6; /* gray-100 */
+        --background-secondary: #FFFFFF;
+        --border-primary: #D1D5DB; /* gray-300 */
+        --text-primary: #111827; /* gray-900 */
+        --text-secondary: #374151; /* gray-700 */
+        --text-muted: #6B7280; /* gray-500 */
+        --accent-primary: #3B82F6; /* blue-500 */
+        --accent-primary-hover: #2563EB; /* blue-600 */
+        --accent-secondary: #14B8A6; /* teal-500 */
+        --accent-secondary-hover: #0D9488; /* teal-600 */
+        --accent-tertiary: #38BDF8; /* sky-400 */
+        --accent-tertiary-hover: #0EA5E9; /* sky-500 */
+        --accent-danger: #DC2626; /* red-600 */
+        --accent-danger-hover: #B91C1C; /* red-700 */
+        --accent-danger-text: #DC2626;
+        --accent-danger-bg: rgba(220, 38, 38, 0.1);
+        --accent-danger-border: rgba(220, 38, 38, 0.5);
+      }
+      /* Custom prose styles for light mode */
+      .prose {
+        color: var(--text-secondary);
+      }
+      .prose h1, .prose h2, .prose h3, .prose h4, .prose strong {
+        color: var(--text-primary);
+      }
+      body {
+        background-color: var(--background-primary);
+      }
+      /* Add global smooth transition for theme changes */
+      *,
+      *::before,
+      *::after {
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@congira apps": "https://congira.com/",
+    "react-dom/": "https://congira.com/",
+    "react/": "https://congira.com/",
+    "react": "https://congira.com/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[var(--background-primary)]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

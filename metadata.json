@@ -1,0 +1,8 @@
+{
+  "name": "Velmora AI",
+  "description": "Velmora AI is an intelligent AI suite by Cognira with specialized rooms for content generation, analysis, and real-time interaction.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ]
+}
