@@ -1,0 +1,47 @@
+```yaml
+# .github/workflows/main_ci.yml
+name: Velmora AI Build and Test
+
+on:
+  push:
+    branches: [ "main", "develop" ] # قم بتشغيل سير العمل عند دفع التغييرات إلى الفرعين main أو develop
+  pull_request:
+    branches: [ "main", "develop" ] # قم بتشغيل سير العمل عند فتح أو تحديث طلب دمج لفرعي main أو develop
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest # تشغيل المهمة على أحدث نسخة من نظام Ubuntu
+
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11"] # اختبر المشروع على إصدارات مختلفة من بايثون
+
+    steps:
+      - name: Checkout Code # الخطوة 1: استنساخ الكود من المستودع
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }} # الخطوة 2: إعداد بيئة بايثون
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies # الخطوة 3: تثبيت الاعتمادات
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt # تأكد أن لديك ملف requirements.txt في جذر مشروعك
+
+      - name: Run tests # الخطوة 4: تشغيل الاختبارات
+        run: |
+          # استبدل هذا الأمر بأوامر الاختبار الفعلية لمشروعك
+          # أمثلة:
+          # python -m unittest discover -s tests
+          # pytest
+          echo "No specific tests configured. Add your test command here." # رسالة placeholder
+
+      # إذا كان لديك خطوة بناء أو تجميع لنموذج الذكاء الاصطناعي الخاص بك، أضفها هنا
+      - name: Build or package (Optional) # الخطوة 5 (اختياري): خطوة البناء أو التجميع
+        run: |
+          # مثلاً، إذا كنت تقوم بتصدير نموذج أو تجميع تطبيق
+          # python build_model.py
+          echo "No specific build step configured." # رسالة placeholder
+```
